@@ -22,7 +22,7 @@ public class PortalItems implements WurmServerMod, ItemTypes, MiscConstants {
 					100, false);
 			
 			com.wurmonline.server.items.ItemTemplateCreator.createItemTemplate(4004, 3, "Steel Server Portal", "portals", "superb", "good", "ok", "poor", "",
-					new short[] { 31, 40, 52 },(short) 60,(short) 1, 0, 9223372036854775807L, 100, 100, 100, -10,
+					new short[] { 25, 49, 31, 52, 44, 48, 67, 51, 178 },(short) 60,(short) 1, 0, 9223372036854775807L, 100, 100, 100, -10,
 					MiscConstants.EMPTY_BYTE_PRIMITIVE_ARRAY, "model.structure.portal.9.", 30.0F, 240000,(byte) 57, 10000, false,
 					-1);
 			
