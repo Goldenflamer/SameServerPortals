@@ -53,7 +53,7 @@ public class SameServerPortalAction implements WurmServerMod, ItemTypes, MiscCon
 		int clicked = target.getTemplateId();
 		int altData = target.getAuxData();
 		if (performer instanceof Player) {
-			if (clicked == 4002 || clicked == 4003 || clicked == 4004 && altData == 1) {
+			if (clicked == 4002 || clicked == 4003 || clicked == 4004 || clicked == 4010 || clicked == 4011 && altData == 1) {
 				return (List<ActionEntry>) Arrays.asList(actionEntry);
 			} else {
 				return null;
