@@ -36,6 +36,11 @@ public class PortalItems implements WurmServerMod, ItemTypes, MiscConstants {
 					MiscConstants.EMPTY_BYTE_PRIMITIVE_ARRAY, "model.structure.portal.4.", 30.0F, 240000,(byte) 57, 10000, false,
 					-1);
 			
+			com.wurmonline.server.items.ItemTemplateCreator.createItemTemplate(4015, 3, "Rift Server Portal", "portals", "superb", "good", "ok", "poor", "",
+					new short[] { 108, 25, 49, 31, 52, 44, 48, 67, 51, 178 },(short) 60,(short) 1, 0, 9223372036854775807L, 100, 100, 100, -10,
+					MiscConstants.EMPTY_BYTE_PRIMITIVE_ARRAY, "model.structure.portal.4.", 30.0F, 240000,(byte) 57, 10000, false,
+					-1);
+			
 		}catch(IOException e){
 			
 		}
