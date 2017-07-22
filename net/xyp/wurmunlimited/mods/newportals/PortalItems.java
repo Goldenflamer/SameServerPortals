@@ -41,6 +41,10 @@ public class PortalItems implements WurmServerMod, ItemTypes, MiscConstants {
 					MiscConstants.EMPTY_BYTE_PRIMITIVE_ARRAY, "model.structure.portal.4.", 30.0F, 240000,(byte) 57, 10000, false,
 					-1);
 			
+			com.wurmonline.server.items.ItemTemplateCreator.createItemTemplate(4016, "Portal ring", "portal rings", "new", "fancy", "ok", "old", "A ring to put on your finger and go somewhere.",
+					new short[]{108, 147, 22, 44, 48, 87, 153},(short) 249,(short) 1, 0, 2419200L, 1, 2, 2, -10, new byte[]{40, 39},
+					"model.decoration.ring.", 40.0F, 50,(byte) 0, 5000, true);
+			
 		}catch(IOException e){
 			
 		}
