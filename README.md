@@ -2,7 +2,7 @@ to use these portals create a new item, choose between:
 1. Steel Server Portal - (Steel Portal Model, the one with glowing ball inside)
 2. Huge Server Portal - (Epic Portal Model, same as steel, without the glowing ball).
 3. Server Portal - (The craftable small epic portal model).
-4. The Ring - unknown (#give 297) can be used as a portal. Set data just like the rest, nice gift for players to get them to events fast.
+4. Portal Ring - (Just a ring,  you wear it, set it like a portal. #give 4016)
 5. Rift Portal - (The hole in the ground with black smoke crystals around it)
 
 Set data1 to the value of the x position you want to transport to.
