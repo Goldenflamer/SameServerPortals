@@ -53,7 +53,7 @@ public class SameServerPortalAction implements WurmServerMod, ItemTypes, MiscCon
 		int clicked = target.getTemplateId();
 		int altData = target.getAuxData();
 		if (performer instanceof Player) {
-			if (clicked == 4002 || clicked == 4003 || clicked == 4004 || clicked == 4010 || clicked == 4011 || clicked == 297 || clicked == 4012) {
+			if (clicked == 4002 || clicked == 4003 || clicked == 4004 || clicked == 4010 || clicked == 4011 || clicked == 4016 || clicked == 4015) {
 				if (altData == 1) {
 				return (List<ActionEntry>) Arrays.asList(actionEntry);
 				} else {
@@ -75,21 +75,21 @@ public class SameServerPortalAction implements WurmServerMod, ItemTypes, MiscCon
 	@Override
 	public boolean action(Action act, Creature performer, Item target, short action, float counter) {
 		try {
-			int tx = (target.getData1() *4);
-			int ty = (target.getData2() *4);
-			int tx1 = tx + 2;
-			int ty1 = ty + 2;
+			float tx = (target.getData1() *4);
+			float ty = (target.getData2() *4);
+			float tx1 = tx + 2;
+			float ty1 = ty + 2;
 			int layer = 0;
 			int floorLevel = performer.getFloorLevel();
 			performer.setTeleportPoints(tx1, ty1, layer, floorLevel);
 			performer.startTeleporting();
 			performer.getCommunicator().sendNormalServerMessage("You feel a slight tingle in your spine.");
-			performer.getCommunicator().sendTeleport(false);
+			performer.getCommunicator().sendTeleport(false,false,(byte) 0);
 			performer.teleport(true);
 			performer.stopTeleporting();
-			return false;
-		} catch (Exception e) {
 			return true;
+		} catch (Exception e) {
+			return false;
 		}
 	}
 }
