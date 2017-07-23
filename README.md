@@ -1,4 +1,5 @@
-to use these portals create a new item, choose between:
+To use these portals create a new item, choose between:
+
 1. Steel Server Portal - (Steel Portal Model, the one with glowing ball inside)
 2. Huge Server Portal - (Epic Portal Model, same as steel, without the glowing ball).
 3. Server Portal - (The craftable small epic portal model).
